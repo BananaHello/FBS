@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+import servicesData from '../data/services.json';
+
+const { pricesEffectiveDate, categories } = servicesData;
+---
+
+<Layout
+  title="Services & Pricing | Forever Beauty & Slimming"
+  description="View our complete menu of facial treatments, clinical skincare, body treatments, waxing, permanent makeup, and more. Prices effective as of January 2025."
+>
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Services & Pricing</h1>
+      <p>
+        Discover our full range of professional beauty treatments,
+        from relaxing facials to advanced clinical skincare.
+      </p>
+      <span class="prices-effective">Prices effective: {pricesEffectiveDate}</span>
+    </div>
+  </header>
+
+  <!-- Services Navigation -->
+  <nav class="services-nav" aria-label="Service categories">
+    <ul class="services-nav-list">
+      {categories.map((category) => (
+        <li>
+          <a href={`#${category.id}`}>{category.name}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <!-- Service Categories -->
+  <div class="services-content">
+    {categories.map((category) => (
+      <section class="service-category" id={category.id}>
+        <div class="container">
+          <header class="category-header">
+            <h2>{category.name}</h2>
+            {category.description && <p>{category.description}</p>}
+          </header>
+
+          <div class="services-grid">
+            {category.services.map((service) => (
+              <article class="service-card">
+                <div class="service-header">
+                  <h3 class="service-name">{service.name}</h3>
+                  <div class="service-price">
+                    ${service.price}
+                    {service.priceNote && (
+                      <span class="service-price-note">{service.priceNote}</span>
+                    )}
+                  </div>
+                </div>
+
+                {service.duration && (
+                  <p class="service-duration">{service.duration}</p>
+                )}
+
+                {service.description && service.description.length > 0 && (
+                  <ul class="service-description">
+                    {service.description.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                )}
+
+                {service.addOn && (
+                  <p class="service-addon">
+                    <strong>Add-on: ${service.addOn.price}</strong> ({service.addOn.duration})
+                    {service.addOn.note && <span> — {service.addOn.note}</span>}
+                  </p>
+                )}
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))}
+  </div>
+
+  <!-- Booking CTA -->
+  <section class="gift-callout section">
+    <div class="container">
+      <h2>Ready to Book Your Treatment?</h2>
+      <p>Call or text either location to schedule your appointment. Walk-ins welcome when available.</p>
+      <div class="hero-cta" style="margin-top: var(--space-6);">
+        <a href="tel:+15107938818" class="btn" style="background: var(--color-white); color: var(--color-primary);">
+          Newark: (510) 793-8818
+        </a>
+        <a href="tel:+14089858883" class="btn" style="background: transparent; color: var(--color-white); border: 2px solid var(--color-white);">
+          Campbell: (408) 985-8883
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  // Highlight active nav item on scroll
+  const sections = document.querySelectorAll('.service-category');
+  const navLinks = document.querySelectorAll('.services-nav-list a');
+
+  const observerOptions = {
+    rootMargin: '-20% 0px -80% 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navLinks.forEach((link) => {
+          link.style.background = '';
+          link.style.color = '';
+        });
+        const activeLink = document.querySelector(`.services-nav-list a[href="#${entry.target.id}"]`);
+        if (activeLink) {
+          activeLink.style.background = 'var(--color-accent-light)';
+          activeLink.style.color = 'var(--color-primary-dark)';
+        }
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach((section) => observer.observe(section));
+</script>
