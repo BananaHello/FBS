@@ -1,0 +1,221 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Forever Beauty & Slimming - Professional skincare, body treatments, and beauty services in Newark and Campbell, California. Over 24 years of experience." } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Forever Beauty & Slimming" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <title>{title}</title>
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Forever Beauty & Slimming",
+      "description": "Professional skincare and beauty services since 1997",
+      "url": "https://foreverbeautyandslimming.com",
+      "telephone": ["+1-510-793-8818", "+1-408-985-8883"],
+      "priceRange": "$$",
+      "foundingDate": "1997",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "6239 Jarvis Ave",
+          "addressLocality": "Newark",
+          "addressRegion": "CA",
+          "postalCode": "94560",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "486 E Campbell Ave, Ste 102",
+          "addressLocality": "Campbell",
+          "addressRegion": "CA",
+          "postalCode": "95008",
+          "addressCountry": "US"
+        }
+      ],
+      "geo": [
+        {
+          "@type": "GeoCoordinates",
+          "latitude": "37.5174",
+          "longitude": "-122.0402"
+        },
+        {
+          "@type": "GeoCoordinates",
+          "latitude": "37.2872",
+          "longitude": "-121.9500"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
+      "sameAs": []
+    })} />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" id="site-header">
+      <nav class="nav-container" aria-label="Main navigation">
+        <a href="/" class="logo" aria-label="Forever Beauty & Slimming - Home">
+          <span class="logo-text">Forever Beauty</span>
+          <span class="logo-tagline">& Slimming</span>
+        </a>
+
+        <button
+          class="mobile-menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none"><a href="/" role="menuitem">Home</a></li>
+          <li role="none"><a href="/services" role="menuitem">Services</a></li>
+          <li role="none"><a href="/contact" role="menuitem">Contact</a></li>
+          <li role="none" class="nav-cta">
+            <a href="tel:+15107938818" role="menuitem" class="btn btn-primary btn-sm">
+              Call to Book
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-text">Forever Beauty</span>
+            <span class="logo-tagline">& Slimming</span>
+          </div>
+          <p class="footer-tagline">Your journey to radiant beauty since 1997</p>
+        </div>
+
+        <div class="footer-locations">
+          <div class="footer-location">
+            <h3>Newark Location</h3>
+            <address>
+              6239 Jarvis Ave<br />
+              Newark, CA 94560<br />
+              <a href="tel:+15107938818">(510) 793-8818</a>
+            </address>
+          </div>
+
+          <div class="footer-location">
+            <h3>Campbell Location</h3>
+            <address>
+              486 E Campbell Ave, Ste 102<br />
+              Campbell, CA 95008<br />
+              <a href="tel:+14089858883">(408) 985-8883</a>
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services & Pricing</a></li>
+            <li><a href="/contact">Contact & Policies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} Forever Beauty & Slimming. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <style is:global>
+      @import '../styles/global.css';
+    </style>
+
+    <script>
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.mobile-menu-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+      const header = document.getElementById('site-header');
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          menuToggle.setAttribute('aria-expanded', (!isExpanded).toString());
+          navMenu.classList.toggle('is-open');
+          document.body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking a link
+        navMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            menuToggle.setAttribute('aria-expanded', 'false');
+            navMenu.classList.remove('is-open');
+            document.body.classList.remove('menu-open');
+          });
+        });
+      }
+
+      // Sticky header on scroll
+      let lastScroll = 0;
+      window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (header) {
+          if (currentScroll > 100) {
+            header.classList.add('is-scrolled');
+          } else {
+            header.classList.remove('is-scrolled');
+          }
+
+          if (currentScroll > lastScroll && currentScroll > 300) {
+            header.classList.add('is-hidden');
+          } else {
+            header.classList.remove('is-hidden');
+          }
+        }
+
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>
