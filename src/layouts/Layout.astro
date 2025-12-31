@@ -6,6 +6,7 @@ interface Props {
 
 const { title, description = "Forever Beauty & Slimming - Professional skincare, body treatments, and beauty services in Newark and Campbell, California. Over 24 years of experience." } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -20,7 +21,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="canonical" href={canonicalURL} />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
@@ -91,7 +92,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
     <header class="site-header" id="site-header">
       <nav class="nav-container" aria-label="Main navigation">
-        <a href="/" class="logo" aria-label="Forever Beauty & Slimming - Home">
+        <a href={base} class="logo" aria-label="Forever Beauty & Slimming - Home">
           <span class="logo-text">Forever Beauty</span>
           <span class="logo-tagline">& Slimming</span>
         </a>
@@ -106,9 +107,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         </button>
 
         <ul class="nav-menu" id="nav-menu" role="menubar">
-          <li role="none"><a href="/" role="menuitem">Home</a></li>
-          <li role="none"><a href="/services" role="menuitem">Services</a></li>
-          <li role="none"><a href="/contact" role="menuitem">Contact</a></li>
+          <li role="none"><a href={base} role="menuitem">Home</a></li>
+          <li role="none"><a href={`${base}services`} role="menuitem">Services</a></li>
+          <li role="none"><a href={`${base}contact`} role="menuitem">Contact</a></li>
           <li role="none" class="nav-cta">
             <a href="tel:+15107938818" role="menuitem" class="btn btn-primary btn-sm">
               Call to Book
@@ -155,9 +156,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         <div class="footer-nav">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Services & Pricing</a></li>
-            <li><a href="/contact">Contact & Policies</a></li>
+            <li><a href={base}>Home</a></li>
+            <li><a href={`${base}services`}>Services & Pricing</a></li>
+            <li><a href={`${base}contact`}>Contact & Policies</a></li>
           </ul>
         </div>
       </div>
