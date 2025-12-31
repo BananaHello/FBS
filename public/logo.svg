@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <defs>
+    <style>
+      .script { font-family: 'Brush Script MT', 'Segoe Script', cursive; }
+      .sans { font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.15em; }
+    </style>
+  </defs>
+  <!-- "Forever" in script style -->
+  <text x="10" y="32" class="script" font-size="36" fill="#6b9b37" font-style="italic">Forever</text>
+  <!-- "BEAUTY" in clean sans-serif -->
+  <text x="10" y="52" class="sans" font-size="18" fill="#6b9b37" font-weight="500">BEAUTY</text>
+</svg>
