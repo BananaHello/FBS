@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Forever Beauty & Slimming | Professional Skincare in Newark & Campbell, CA">
@@ -15,7 +16,7 @@ import Layout from '../layouts/Layout.astro';
         <a href="tel:+15107938818" class="btn btn-primary btn-lg">
           Call to Book
         </a>
-        <a href="/services" class="btn btn-secondary btn-lg">
+        <a href={`${base}services`} class="btn btn-secondary btn-lg">
           View Services
         </a>
       </div>
@@ -86,7 +87,7 @@ import Layout from '../layouts/Layout.astro';
             Newark, CA 94560
           </address>
           <a href="tel:+15107938818" class="phone">(510) 793-8818</a>
-          <a href="/contact" class="btn btn-secondary btn-sm">Contact & Directions</a>
+          <a href={`${base}contact`} class="btn btn-secondary btn-sm">Contact & Directions</a>
         </div>
 
         <div class="location-card">
@@ -96,7 +97,7 @@ import Layout from '../layouts/Layout.astro';
             Campbell, CA 95008
           </address>
           <a href="tel:+14089858883" class="phone">(408) 985-8883</a>
-          <a href="/contact" class="btn btn-secondary btn-sm">Contact & Directions</a>
+          <a href={`${base}contact`} class="btn btn-secondary btn-sm">Contact & Directions</a>
         </div>
       </div>
     </div>
@@ -133,7 +134,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div style="text-align: center; margin-top: var(--space-10);">
-        <a href="/services" class="btn btn-primary btn-lg">View All Services & Pricing</a>
+        <a href={`${base}services`} class="btn btn-primary btn-lg">View All Services & Pricing</a>
       </div>
     </div>
   </section>
