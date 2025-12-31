@@ -6,7 +6,9 @@ interface Props {
 
 const { title, description = "Forever Beauty & Slimming - Professional skincare, body treatments, and beauty services in Newark and Campbell, California. Over 24 years of experience." } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const base = import.meta.env.BASE_URL;
+// Ensure base path ends with a slash for proper URL concatenation
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
 ---
 
 <!doctype html>
