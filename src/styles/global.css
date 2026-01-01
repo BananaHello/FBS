@@ -524,6 +524,7 @@ p {
 }
 
 .hero-logo {
+  display: block;
   max-width: 260px;
   height: auto;
   margin: 0 auto var(--space-6);

@@ -6,7 +6,7 @@
     </style>
   </defs>
   <!-- "Forever" in script style -->
-  <text x="10" y="32" class="script" font-size="36" fill="#6b9b37" font-style="italic">Forever</text>
+  <text x="100" y="32" class="script" font-size="36" fill="#6b9b37" font-style="italic" text-anchor="middle">Forever</text>
   <!-- "BEAUTY" in clean sans-serif -->
-  <text x="10" y="52" class="sans" font-size="18" fill="#6b9b37" font-weight="500">BEAUTY</text>
+  <text x="100" y="52" class="sans" font-size="18" fill="#6b9b37" font-weight="500" text-anchor="middle">BEAUTY</text>
 </svg>
