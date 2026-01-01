@@ -1025,6 +1025,7 @@ body:has(.site-header.is-hidden) .services-nav {
 
 .footer-brand {
   grid-column: 1 / -1;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
