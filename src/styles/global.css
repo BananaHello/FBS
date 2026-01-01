@@ -951,12 +951,13 @@ body:has(.site-header.is-hidden) .services-nav {
 
 .hours-note {
   text-align: center;
-  margin-top: var(--space-6);
+  margin: var(--space-6) auto 0;
   padding: var(--space-4);
   background: var(--color-accent-light);
   border-radius: var(--radius-sm);
   color: var(--color-primary);
   font-size: var(--text-sm);
+  max-width: 480px;
 }
 
 /* Policies */
