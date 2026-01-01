@@ -898,6 +898,16 @@ body:has(.site-header.is-hidden) .services-nav {
   color: var(--color-primary);
 }
 
+.map-embed {
+  margin: var(--space-4) 0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.map-embed iframe {
+  display: block;
+}
+
 .map-link {
   display: inline-flex;
   align-items: center;
