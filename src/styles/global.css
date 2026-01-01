@@ -1110,7 +1110,7 @@ body:has(.site-header.is-hidden) .services-nav {
   margin: var(--space-8) auto 0;
   padding: var(--space-6) var(--container-padding) 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
+  text-align: left;
 }
 
 .footer-bottom p {
