@@ -707,6 +707,12 @@ p {
   z-index: 100;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  transition: top var(--transition);
+}
+
+/* Move services nav up when header is hidden */
+body:has(.site-header.is-hidden) .services-nav {
+  top: 0;
 }
 
 .services-nav-list {
