@@ -200,6 +200,7 @@ const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
       let lastScroll = 0;
       const heroBg = document.getElementById('hero-bg');
       const hero = document.getElementById('hero');
+      const scrollHint = document.getElementById('scroll-hint');
 
       window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
@@ -215,6 +216,15 @@ const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
             header.classList.add('is-hidden');
           } else {
             header.classList.remove('is-hidden');
+          }
+        }
+
+        // Hide scroll hint after scrolling
+        if (scrollHint) {
+          if (currentScroll > 50) {
+            scrollHint.classList.add('hidden');
+          } else {
+            scrollHint.classList.remove('hidden');
           }
         }
 

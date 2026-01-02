@@ -14,6 +14,15 @@ const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
       <img src={`${base}hero-bg.jpg`} alt="" class="hero-bg-img" />
       <div class="hero-bg-overlay"></div>
     </div>
+
+    <!-- Scroll Hint -->
+    <div class="scroll-hint" id="scroll-hint">
+      <span class="scroll-hint-text">Scroll</span>
+      <svg class="scroll-hint-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+      </svg>
+    </div>
+
     <div class="hero-content">
       <div class="hero-box">
         <img src={`${base}logo.svg`} alt="Forever Beauty" class="hero-logo" width="280" height="90" />
