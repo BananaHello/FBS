@@ -240,44 +240,53 @@
       "services": [
         {
           "name": "Eyebrow Design",
-          "price": 25
+          "price": 30,
+          "priceNote": "starting at"
         },
         {
           "name": "Upper Lip",
-          "price": 15
+          "price": 15,
+          "priceNote": "starting at"
         },
         {
           "name": "Chin",
-          "price": 25
+          "price": 30,
+          "priceNote": "starting at"
         },
         {
           "name": "Full Arms",
-          "price": 55
+          "price": 55,
+          "priceNote": "starting at"
         },
         {
           "name": "Half Arms",
-          "price": 40
+          "price": 40,
+          "priceNote": "starting at"
         },
         {
           "name": "Full Legs",
-          "price": 80
+          "price": 80,
+          "priceNote": "starting at"
         },
         {
           "name": "Half Legs",
-          "price": 60
+          "price": 60,
+          "priceNote": "starting at"
         },
         {
           "name": "Underarms",
-          "price": 25
+          "price": 30,
+          "priceNote": "starting at"
         },
         {
           "name": "Brazilian Bikini, initial",
-          "price": 80
+          "price": 80,
           "priceNote": "starting at"
         },
         {
           "name": "Brazilian, return within 6 weeks",
-          "price": 70
+          "price": 70,
+          "priceNote": "starting at"
         },
         {
           "name": "Bikini",
@@ -291,8 +300,8 @@
         },
         {
           "name": "Combination",
-          "price": 35,
-          "priceNote": "2 of the above"
+          "price": 40,
+          "priceNote": "Any 2 of the above"
         }
       ]
     },
