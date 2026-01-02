@@ -198,6 +198,9 @@ const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
 
       // Sticky header on scroll
       let lastScroll = 0;
+      const heroBg = document.getElementById('hero-bg');
+      const hero = document.getElementById('hero');
+
       window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
 
@@ -212,6 +215,22 @@ const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
             header.classList.add('is-hidden');
           } else {
             header.classList.remove('is-hidden');
+          }
+        }
+
+        // Hero background fade effect
+        if (heroBg && hero) {
+          const heroHeight = hero.offsetHeight;
+          const fadeStart = heroHeight * 0.3;
+          const fadeEnd = heroHeight * 0.8;
+
+          if (currentScroll <= fadeStart) {
+            heroBg.style.opacity = '1';
+          } else if (currentScroll >= fadeEnd) {
+            heroBg.style.opacity = '0';
+          } else {
+            const fadeProgress = (currentScroll - fadeStart) / (fadeEnd - fadeStart);
+            heroBg.style.opacity = String(1 - fadeProgress);
           }
         }
 

@@ -9,21 +9,27 @@ const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
   description="Forever Beauty offers expert facials, clinical skincare, waxing, permanent makeup, and body treatments in Newark and Campbell, CA. Trusted since 1997. Call to book your appointment."
 >
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="hero-bg">
+      <img src={`${base}hero-bg.jpg`} alt="" class="hero-bg-img" />
+      <div class="hero-bg-overlay"></div>
+    </div>
     <div class="hero-content">
-      <img src={`${base}logo.svg`} alt="Forever Beauty" class="hero-logo" width="280" height="90" />
-      <h1 class="visually-hidden">Forever Beauty</h1>
-      <p class="hero-tagline">
-        Your destination for professional skincare and beauty treatments in the Bay Area.
-        Experience personalized care in a relaxing, welcoming environment.
-      </p>
-      <div class="hero-cta">
-        <a href="tel:+15107938818" class="btn btn-primary btn-lg">
-          Call to Book
-        </a>
-        <a href={`${base}services`} class="btn btn-secondary btn-lg">
-          View Services
-        </a>
+      <div class="hero-box">
+        <img src={`${base}logo.svg`} alt="Forever Beauty" class="hero-logo" width="280" height="90" />
+        <h1 class="visually-hidden">Forever Beauty</h1>
+        <p class="hero-tagline">
+          Your destination for professional skincare and beauty treatments in the Bay Area.
+          Experience personalized care in a relaxing, welcoming environment.
+        </p>
+        <div class="hero-cta">
+          <a href="tel:+15107938818" class="btn btn-primary btn-lg">
+            Call to Book
+          </a>
+          <a href={`${base}services`} class="btn btn-secondary btn-lg">
+            View Services
+          </a>
+        </div>
       </div>
     </div>
   </section>
