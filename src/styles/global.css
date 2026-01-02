@@ -853,6 +853,8 @@ body:has(.site-header.is-hidden) .services-nav {
   font-weight: 700;
   color: var(--color-primary);
   white-space: nowrap;
+  text-align: right;
+  flex-shrink: 0;
 }
 
 .service-price-note {
@@ -860,6 +862,8 @@ body:has(.site-header.is-hidden) .services-nav {
   font-weight: 400;
   color: var(--color-text-muted);
   display: block;
+  line-height: 1.3;
+  margin-top: var(--space-1);
 }
 
 .service-duration {
