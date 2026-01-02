@@ -362,9 +362,15 @@ p {
 }
 
 .logo-img {
-  height: 40px;
+  height: 50px;
   width: auto;
   transition: opacity var(--transition);
+}
+
+@media (min-width: 768px) {
+  .logo-img {
+    height: 55px;
+  }
 }
 
 .logo:hover .logo-img {
@@ -535,7 +541,7 @@ p {
 .hero-bg-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .hero-content {
@@ -543,57 +549,70 @@ p {
   z-index: 1;
   text-align: center;
   width: 100%;
-  max-width: 720px;
+  max-width: 480px;
   margin: 0 auto;
-  padding: var(--space-8) var(--container-padding);
+  padding: var(--space-6) var(--container-padding);
 }
 
 .hero-box {
-  background: rgba(255, 255, 255, 0.95);
-  padding: var(--space-8) var(--space-6);
+  background: rgba(255, 255, 255, 0.92);
+  padding: var(--space-6) var(--space-4);
   border-radius: var(--radius);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 @media (min-width: 768px) {
   .hero-box {
-    padding: var(--space-12) var(--space-8);
+    padding: var(--space-8) var(--space-6);
   }
 }
 
 .hero-logo {
   display: block;
-  max-width: 260px;
+  max-width: 200px;
   height: auto;
-  margin: 0 auto var(--space-6);
+  margin: 0 auto var(--space-4);
 }
 
 @media (min-width: 768px) {
   .hero-logo {
-    max-width: 320px;
+    max-width: 240px;
   }
 }
 
 .hero-tagline {
-  font-size: var(--text-lg);
+  font-size: var(--text-base);
   color: var(--color-text-muted);
-  margin-bottom: var(--space-8);
-  max-width: 540px;
+  margin-bottom: var(--space-6);
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.5;
 }
 
 .hero-cta {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-3);
   align-items: center;
+}
+
+.hero-cta .btn {
+  width: 100%;
+  max-width: 220px;
 }
 
 @media (min-width: 480px) {
   .hero-cta {
     flex-direction: row;
     justify-content: center;
+  }
+
+  .hero-cta .btn {
+    width: auto;
+    max-width: none;
   }
 }
 
