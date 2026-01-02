@@ -168,46 +168,6 @@
       ]
     },
     {
-      "id": "advanced-technology",
-      "name": "Advanced Technology",
-      "description": "State-of-the-art treatments using the latest technology",
-      "services": [
-        {
-          "name": "Bio-Light Laser Photofacial",
-          "duration": "45 min",
-          "price": 175,
-          "description": [
-            "LED light therapy",
-            "Stimulates collagen production",
-            "Reduces redness and pigmentation",
-            "No downtime"
-          ]
-        },
-        {
-          "name": "RF Therma G Plus Face Lifting",
-          "duration": "60 min",
-          "price": 200,
-          "description": [
-            "Radiofrequency skin tightening",
-            "Non-invasive lifting effect",
-            "Contours facial features",
-            "Stimulates natural collagen"
-          ]
-        },
-        {
-          "name": "RF Eye Contour Treatment",
-          "duration": "30 min",
-          "price": 100,
-          "description": [
-            "Targets crow's feet and wrinkles",
-            "Reduces puffiness",
-            "Tightens delicate eye area",
-            "Brightens dark circles"
-          ]
-        }
-      ]
-    },
-    {
       "id": "body-treatments",
       "name": "Body Treatments",
       "description": "Relaxing and rejuvenating treatments for your whole body",
