@@ -67,6 +67,12 @@ const { pricesEffectiveDate, categories } = servicesData;
                   </ul>
                 )}
 
+                {service.series && (
+                  <p class="service-series">
+                    Series of {service.series.count} <span class="service-series-price">${service.series.price}</span>
+                  </p>
+                )}
+
                 {service.addOn && (
                   <p class="service-addon">
                     <strong>Add-on: ${service.addOn.price}</strong> ({service.addOn.duration})

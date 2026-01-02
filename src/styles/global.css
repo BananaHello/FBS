@@ -891,6 +891,24 @@ body:has(.site-header.is-hidden) .services-nav {
   color: var(--color-accent);
 }
 
+.service-series {
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-accent-light);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-series-price {
+  font-weight: 700;
+  font-size: var(--text-base);
+}
+
 .service-addon {
   margin-top: var(--space-4);
   padding-top: var(--space-3);
