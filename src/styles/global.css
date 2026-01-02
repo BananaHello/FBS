@@ -513,7 +513,6 @@ p {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-top: var(--header-height);
   overflow: hidden;
 }
@@ -529,35 +528,90 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  /* Mobile: center on the people */
+  object-position: 60% center;
 }
 
 .hero-bg-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  /* Lighter overlay to let the image shine through */
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  text-align: center;
   width: 100%;
-  max-width: 720px;
+  max-width: var(--container-max);
   margin: 0 auto;
   padding: var(--space-8) var(--container-padding);
+  /* Mobile: center the content */
+  display: flex;
+  justify-content: center;
 }
 
 .hero-box {
-  background: rgba(255, 255, 255, 0.95);
-  padding: var(--space-8) var(--space-6);
+  background: rgba(255, 255, 255, 0.97);
+  padding: var(--space-6);
   border-radius: var(--radius);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
 }
 
-@media (min-width: 768px) {
+/* Tablet: start shifting left */
+@media (min-width: 640px) {
+  .hero-bg-img {
+    object-position: 65% center;
+  }
+
+  .hero-box {
+    padding: var(--space-8);
+  }
+}
+
+/* Desktop: text left, image right */
+@media (min-width: 900px) {
+  .hero-bg-img {
+    /* Anchor image to right so staff are visible */
+    object-position: right center;
+  }
+
+  .hero-bg-overlay {
+    /* Gradient from left (darker for text) to right (lighter for image) */
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.1) 35%,
+      rgba(0, 0, 0, 0.05) 100%
+    );
+  }
+
+  .hero-content {
+    /* Align content box to the left */
+    justify-content: flex-start;
+  }
+
+  .hero-box {
+    padding: var(--space-8) var(--space-6);
+    max-width: 440px;
+    margin-left: var(--space-4);
+  }
+}
+
+/* Large desktop: more breathing room */
+@media (min-width: 1200px) {
   .hero-box {
     padding: var(--space-12) var(--space-8);
+    max-width: 480px;
+    margin-left: var(--space-8);
   }
 }
 
