@@ -118,12 +118,7 @@
             "Smooths skin texture",
             "Reduces fine lines",
             "Enhances product absorption"
-          ],
-          "addOn": {
-            "price": 20,
-            "duration": "10 min",
-            "note": "Add to any facial treatment"
-          }
+          ]
         }
       ]
     },
@@ -253,12 +248,7 @@
             "Relaxing scalp treatment",
             "Promotes hair health",
             "Relieves tension headaches"
-          ],
-          "addOn": {
-            "price": 20,
-            "duration": "10 min",
-            "note": "Add to any treatment"
-          }
+          ]
         }
       ]
     },
