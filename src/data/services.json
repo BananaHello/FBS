@@ -300,8 +300,7 @@
         },
         {
           "name": "Combination",
-          "price": 40,
-          "priceNote": "Any 2 of the above"
+          "price": 40
         }
       ]
     },
