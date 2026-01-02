@@ -2,18 +2,19 @@
   "pricesEffectiveDate": "January 2026",
   "categories": [
     {
-      "id": "signature-facials",
-      "name": "Signature Facials",
-      "description": "Our classic facial treatments customized for your skin type",
+      "id": "facial-treatments",
+      "name": "Facial Treatments",
       "services": [
         {
           "name": "Great Skin Basic Facial",
           "duration": "45 min",
           "price": 80,
           "description": [
-            "Deep cleansing and exfoliation",
-            "Customized mask treatment",
-            "Moisturizing finish"
+            "Deep cleansing of the face",
+            "Exfoliation",
+            "Vapor Spray",
+            "Blackhead extraction",
+            "Creamy facial mask"
           ]
         },
         {
@@ -21,433 +22,397 @@
           "duration": "60 min",
           "price": 100,
           "description": [
-            "Complete skin analysis",
-            "Steam and extraction",
-            "Relaxing massage",
-            "Custom mask and serum"
+            "Deep cleansing of the face",
+            "Exfoliation",
+            "Vapor Spray",
+            "Blackhead extraction",
+            "Massage of face and shoulder",
+            "Creamy facial mask"
           ]
         },
         {
-          "name": "24K Gold Luxury Facial",
-          "duration": "75 min",
-          "price": 300,
-          "description": [
-            "Pure 24K gold-infused treatment",
-            "Anti-aging and firming benefits",
-            "Brightens and revitalizes skin",
-            "Luxury pampering experience"
-          ]
-        },
-        {
-          "name": "Hydro Deep Cleansing Facial",
+          "name": "Deep Pore Acne Facial",
           "duration": "60 min",
           "price": 120,
           "description": [
-            "Deep pore cleansing",
-            "Hydrating infusion",
-            "Ideal for congested skin"
+            "Deep cleansing of the face",
+            "Exfoliation",
+            "Vapor Spray",
+            "Blackhead extraction",
+            "Detoxification",
+            "Modeling mask"
           ]
         },
         {
-          "name": "Back Facial Treatment",
-          "duration": "45 min",
-          "price": 85,
+          "name": "Aromatherapy Facial",
+          "duration": "90 min",
+          "price": 120,
           "description": [
-            "Deep cleansing for back area",
-            "Minimizes pores and detoxifies",
-            "Smooths and clarifies skin"
+            "Deep cleansing of the face",
+            "Exfoliation",
+            "Vapor Spray",
+            "Blackhead extraction",
+            "Eyebrow shaping",
+            "Facial Ampoules",
+            "Massage with Jojoba Oil – face, neck, and shoulders",
+            "Vitalized eye mask",
+            "Aromatic mask with essence",
+            "Soft mask/thermal mask"
+          ]
+        },
+        {
+          "name": "Ultrasonic Facial",
+          "duration": "90 min",
+          "price": 150,
+          "description": [
+            "Deep cleansing of the face",
+            "Exfoliation",
+            "Vapor Spray",
+            "Blackhead extraction",
+            "Eyebrow shaping",
+            "Facial Ampoules",
+            "Massage with Jojoba Oil - face, neck, and shoulders",
+            "Vitalized eye mask",
+            "Aromatic mask with essence",
+            "Soft mask/thermal mask"
           ]
         }
       ]
     },
     {
       "id": "clinical-treatments",
-      "name": "Clinical Treatments",
-      "description": "Advanced treatments for targeted skin concerns",
+      "name": "Special Clinical Treatments",
       "services": [
         {
-          "name": "G.M. Collin Derm Renewal Peel",
-          "duration": "45 min",
-          "price": 85,
+          "name": "Eye Contour Treatment",
+          "price": 100,
           "description": [
-            "Professional clinical peel",
-            "Brightens complexion",
-            "Evens skin tone and texture",
-            "Reduces discoloration"
+            "An intensive eye contour treatment to fade dark circles, reduce puffiness, diminish fine lines, and decongest the eyelids, creating a feeling of relaxation around the eyes."
           ]
         },
         {
-          "name": "G.M. Collin SEA C-Spa Treatment",
-          "duration": "75 min",
+          "name": "Herbal C-Peel",
+          "price": 750,
+          "description": [
+            "Get ready for new skin in just a few days with an all-natural peeling method to exfoliate, renew, and regenerate the skin!",
+            "1st day treatment with herbal massage",
+            "3 home care products",
+            "5th day follow-up regeneration treatment"
+          ]
+        },
+        {
+          "name": "Herbal B-Peel",
           "price": 200,
           "description": [
-            "Vitamin C infusion therapy",
-            "Anti-aging and brightening",
-            "Long-lasting results on fine lines",
-            "Restores youthful radiance"
-          ]
+            "The natural alternative – fast, easy",
+            "Beauty boost before big events",
+            "4 treatments recommended for best results"
+          ],
+          "series": {
+            "count": 4,
+            "price": 600
+          }
         },
         {
-          "name": "G.M. Collin Botinol Effect Treatment",
-          "duration": "90 min",
+          "name": "G.M. Collin Derm Renewal Clinical Peel",
+          "price": 85,
+          "description": [
+            "A deep exfoliation treatment that brightens complexion and promotes skin renewal, evening out blotches and discolorations."
+          ],
+          "series": {
+            "count": 6,
+            "price": 400
+          }
+        },
+        {
+          "name": "G.M. Collin Botinol (Botox-like) Effect",
           "price": 250,
           "description": [
-            "Botox-like smoothing effect",
-            "Four-step intensive treatment",
-            "Reduces lines and deep wrinkles",
-            "Collagen-boosting formula"
-          ]
+            "A four step treatment that reduces superficial lines and deep wrinkles",
+            "Using collagen and vegetal filling spheres, this relaxing treatment plumps and redensifies skin for a rejuvenated appearance"
+          ],
+          "series": {
+            "count": 4,
+            "price": 750
+          }
         },
         {
           "name": "G.M. Collin Collagen 90-II Treatment",
-          "duration": "90 min",
           "price": 250,
           "description": [
-            "Intensive collagen therapy",
-            "Firms and tightens skin",
-            "Reduces visible aging signs",
-            "Deep nourishment"
+            "An anti-aging treatment that combines a pure collagen sheet with other active ingredients to provide intensive hydration, cellular regeneration, and epidermal renewal."
+          ],
+          "series": {
+            "count": 5,
+            "price": 800
+          }
+        },
+        {
+          "name": "Intensive Whitening Treatment",
+          "price": 200,
+          "description": [
+            "A highly efficient exfoliating and anti-pigmentation cure combined with anti-aging effect."
+          ],
+          "series": {
+            "count": 6,
+            "price": 950
+          }
+        },
+        {
+          "name": "G.M. Collin SEA C-Spa Treatment",
+          "price": 200,
+          "description": [
+            "An anti-aging treatment that instantly restores the skin's youthful appearance for long-lasting effects on lines, wrinkles, and for a radiant complexion",
+            "This treatment rejuvenates the skin by stimulating collagen and elastin synthesis needed to regain suppleness and elasticity"
+          ],
+          "series": {
+            "count": 4,
+            "price": 650
+          }
+        },
+        {
+          "name": "O2 Oxygen Rejuvenation Infusion",
+          "price": 250,
+          "description": [
+            "This therapeutic treatment stimulates regeneration of new cells and the production of elastin and collagen and plumps the skin surface to visibly reduce the appearance of fine lines and wrinkles."
           ]
         },
         {
-          "name": "Microdermabrasion",
-          "duration": "30 min",
+          "name": "Meridian Facial",
           "price": 150,
           "description": [
-            "Crystal-free exfoliation",
-            "Smooths skin texture",
-            "Reduces fine lines",
-            "Enhances product absorption"
+            "Caress and sculpt your facial contours, neck, and scalp with the ridges, valleys, and peaks of the jade recontouring tool."
           ]
         }
       ]
     },
     {
-      "id": "acne-treatments",
-      "name": "Acne & Problem Skin",
-      "description": "Specialized treatments for acne-prone and troubled skin",
+      "id": "additional-luxuries",
+      "name": "Additional Luxuries",
       "services": [
         {
-          "name": "Puracne Oxygen Acne Treatment",
-          "duration": "60 min",
-          "price": 130,
+          "name": "Paraffin Hand Treatment",
+          "price": 50,
           "description": [
-            "Oxygen-infused therapy",
-            "Kills acne-causing bacteria",
-            "Reduces inflammation",
-            "Promotes healing"
+            "Deep cleansing, exfoliation",
+            "Paraffin mask to seal in moisture",
+            "Acupressure massage"
           ]
         },
         {
-          "name": "O2 Intraceutical Oxygen Treatment",
-          "duration": "60 min",
-          "price": 200,
+          "name": "Paraffin Foot Treatment",
+          "price": 65,
           "description": [
-            "Celebrity-favorite treatment",
-            "Instant glow and hydration",
-            "Plumps and firms skin",
-            "Perfect before special events"
+            "Deep cleansing, exfoliation",
+            "Paraffin mask to seal in moisture",
+            "Acupressure treatment"
           ]
         },
         {
-          "name": "Ultrasonic Whitening Treatment",
-          "duration": "60 min",
-          "price": 150,
+          "name": "Scalp Treatment",
+          "price": 45,
           "description": [
-            "Ultrasonic deep penetration",
-            "Brightens and evens skin tone",
-            "Reduces dark spots",
-            "Gentle and effective"
+            "A relaxing aromatherapy scalp massage focused on acupressure points",
+            "Combined with any treatment – 10 minutes $20"
           ]
+        }
+      ]
+    },
+    {
+      "id": "microdermabrasion",
+      "name": "Multipeel Microdermabrasion",
+      "description": "Microdermabrasion is the most effective way to safely exfoliate the skin in a controlled manner without laser or chemicals. Exfoliation leaves a smoother texture, producing softer, younger looking skin. These improvements steadily increase with each treatment.",
+      "services": [
+        {
+          "name": "Full Face",
+          "price": 150
+        },
+        {
+          "name": "Full Face & Neck",
+          "price": 200
+        }
+      ]
+    },
+    {
+      "id": "waxing",
+      "name": "Waxing Treatments",
+      "description": "Waxing services are not recommended for those taking Retin-A, Accutane, or any antibiotics due to potential skin sensitivity problems.",
+      "services": [
+        {
+          "name": "Eyebrow Design",
+          "price": 25
+        },
+        {
+          "name": "Upper Lip",
+          "price": 15
+        },
+        {
+          "name": "Chin",
+          "price": 25
+        },
+        {
+          "name": "Combination",
+          "price": 35,
+          "priceNote": "2 of the above"
+        },
+        {
+          "name": "Full Arms",
+          "price": 55
+        },
+        {
+          "name": "Half Arms",
+          "price": 40
+        },
+        {
+          "name": "Full Legs",
+          "price": 80
+        },
+        {
+          "name": "Half Legs",
+          "price": 60
+        },
+        {
+          "name": "Underarms",
+          "price": 25
+        },
+        {
+          "name": "Brazilian Bikini, initial",
+          "price": 80
+        },
+        {
+          "name": "Brazilian, return within 6 weeks",
+          "price": 70
+        },
+        {
+          "name": "Bikini",
+          "price": 50,
+          "priceNote": "starting at"
+        },
+        {
+          "name": "Back",
+          "price": 80,
+          "priceNote": "starting at"
+        }
+      ]
+    },
+    {
+      "id": "permanent-makeup",
+      "name": "Permanent Make Up",
+      "services": [
+        {
+          "name": "Eyebrow",
+          "price": 800
+        },
+        {
+          "name": "Eyeliner",
+          "price": 400
+        },
+        {
+          "name": "Lip Liner",
+          "price": 400
+        },
+        {
+          "name": "Entire Lip",
+          "price": 600
+        }
+      ]
+    },
+    {
+      "id": "makeup-services",
+      "name": "Make Up Services",
+      "services": [
+        {
+          "name": "Bridal Package",
+          "price": 300
+        },
+        {
+          "name": "Day Make-up",
+          "price": 50
+        },
+        {
+          "name": "Evening Make-up",
+          "price": 50,
+          "priceNote": "$50-$80"
+        },
+        {
+          "name": "Eyelash Perming",
+          "price": 100
+        },
+        {
+          "name": "Arching Eyebrow",
+          "price": 25
+        },
+        {
+          "name": "Eyebrow Tinting",
+          "price": 30
+        },
+        {
+          "name": "Eyebrow Tinting and Waxing",
+          "price": 50
+        },
+        {
+          "name": "Eye Lash Tinting",
+          "price": 40
+        },
+        {
+          "name": "Eyebrow & Lash Tinting",
+          "price": 60
         }
       ]
     },
     {
       "id": "body-treatments",
       "name": "Body Treatments",
-      "description": "Relaxing and rejuvenating treatments for your whole body",
       "services": [
+        {
+          "name": "Aroma-Marine Aromatic Back Facial",
+          "duration": "60 min",
+          "price": 180,
+          "description": [
+            "This is a refreshing service for both men and women to promote a healthy and clear skin",
+            "The combination of active ingredients will work to minimize pores and detoxify the skin on the back, leaving fresh, radiant, and bright skin"
+          ]
+        },
+        {
+          "name": "Sea Salt Body Buffing",
+          "duration": "30 min",
+          "price": 80,
+          "description": [
+            "Mineral sea salt is mixed with essential oils to deeply cleanse, exfoliate, and invigorate the skin."
+          ]
+        },
+        {
+          "name": "Aroma – Hot Oil Body Wrap",
+          "duration": "60 min",
+          "price": 150,
+          "description": [
+            "This is a relaxing treatment with warm oils specially blended to suit your needs, followed by body wrapping in a warm thermal blanket to further increase penetration",
+            "Your skin will feel soft, smooth, and hydrated"
+          ]
+        },
+        {
+          "name": "Dead Sea Mineral Mud Body Wrap",
+          "duration": "60 min",
+          "price": 150,
+          "description": [
+            "Mineral-rich healing mud is beneficial in detoxifying and purifying our entire body."
+          ]
+        },
         {
           "name": "Aromatherapy Body Relaxing Treatment",
           "duration": "60 min",
           "price": 150,
           "description": [
-            "Custom essential oil blend",
-            "Full body relaxation",
-            "Stress relief and tension release",
-            "Nourishes and softens skin"
+            "A relaxing massage experience applied with special aroma recipe of essential oils which hydrates, tones, revitalizes, and heals the entire body."
           ]
         },
         {
-          "name": "Body Slimming Wrap",
+          "name": "Hot Stone Therapy Treatment",
           "duration": "60 min",
-          "price": 120,
+          "price": 180,
           "description": [
-            "Detoxifying body wrap",
-            "Helps reduce inches",
-            "Firms and tones skin",
-            "Releases toxins"
+            "The heat within the stones penetrates your body to provide you with a deeply relaxing experience."
           ]
-        },
-        {
-          "name": "Herbal Body Peel",
-          "duration": "45 min",
-          "price": 95,
-          "description": [
-            "Natural herbal exfoliation",
-            "Removes dead skin cells",
-            "Reveals smooth, fresh skin",
-            "Improves circulation"
-          ]
-        },
-        {
-          "name": "Aromatherapy Scalp Massage",
-          "duration": "15 min",
-          "price": 25,
-          "description": [
-            "Relaxing scalp treatment",
-            "Promotes hair health",
-            "Relieves tension headaches"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "waxing",
-      "name": "Waxing Services",
-      "description": "Professional hair removal for smooth, lasting results",
-      "services": [
-        {
-          "name": "Eyebrow Wax",
-          "price": 15
-        },
-        {
-          "name": "Lip Wax",
-          "price": 10
-        },
-        {
-          "name": "Chin Wax",
-          "price": 12
-        },
-        {
-          "name": "Full Face Wax",
-          "price": 45,
-          "description": ["Includes eyebrows, lip, chin, and sides"]
-        },
-        {
-          "name": "Underarm Wax",
-          "price": 25
-        },
-        {
-          "name": "Half Arm Wax",
-          "price": 30
-        },
-        {
-          "name": "Full Arm Wax",
-          "price": 45
-        },
-        {
-          "name": "Half Leg Wax",
-          "price": 40
-        },
-        {
-          "name": "Full Leg Wax",
-          "price": 70
-        },
-        {
-          "name": "Bikini Wax",
-          "price": 35
-        },
-        {
-          "name": "Brazilian Wax",
-          "price": 60
-        },
-        {
-          "name": "Back Wax",
-          "price": 50,
-          "description": ["For men and women"]
-        },
-        {
-          "name": "Chest Wax",
-          "price": 45,
-          "description": ["For men"]
-        }
-      ]
-    },
-    {
-      "id": "permanent-makeup",
-      "name": "Permanent Makeup",
-      "description": "Long-lasting beauty enhancement by certified professionals",
-      "services": [
-        {
-          "name": "Eyebrow Microblading",
-          "price": 350,
-          "description": [
-            "Natural hair-stroke technique",
-            "Lasts 1-2 years",
-            "Includes touch-up session"
-          ]
-        },
-        {
-          "name": "Eyebrow Powder Fill",
-          "price": 300,
-          "description": [
-            "Soft, powdered brow effect",
-            "Natural-looking enhancement",
-            "Lasts 1-2 years"
-          ]
-        },
-        {
-          "name": "Eyeliner (Upper)",
-          "price": 250,
-          "description": [
-            "Defines and enhances eyes",
-            "Wake up with perfect liner",
-            "Lasts 2-3 years"
-          ]
-        },
-        {
-          "name": "Eyeliner (Lower)",
-          "price": 200
-        },
-        {
-          "name": "Eyeliner (Both)",
-          "price": 400
-        },
-        {
-          "name": "Lip Liner",
-          "price": 300,
-          "description": [
-            "Defines lip shape",
-            "Creates fuller appearance",
-            "Long-lasting color"
-          ]
-        },
-        {
-          "name": "Full Lip Color",
-          "price": 450,
-          "description": [
-            "Complete lip enhancement",
-            "Choose your perfect shade",
-            "Includes liner and fill"
-          ]
-        },
-        {
-          "name": "Touch-Up Session",
-          "price": 100,
-          "description": ["Within 6 months of original service"]
-        }
-      ]
-    },
-    {
-      "id": "skin-correction",
-      "name": "Skin Correction",
-      "description": "Permanent removal of skin imperfections",
-      "services": [
-        {
-          "name": "Skin Tag Removal",
-          "price": 25,
-          "priceNote": "per tag",
-          "description": [
-            "Quick and painless removal",
-            "Minimal downtime",
-            "Professional technique"
-          ]
-        },
-        {
-          "name": "Age Spot Removal",
-          "price": 30,
-          "priceNote": "per spot",
-          "description": [
-            "Fades and removes dark spots",
-            "Even skin tone results",
-            "Multiple sessions may be needed"
-          ]
-        },
-        {
-          "name": "Mole Removal",
-          "price": 50,
-          "priceNote": "starting price",
-          "description": [
-            "Consultation required",
-            "Safe removal technique",
-            "Price varies by size"
-          ]
-        },
-        {
-          "name": "Freckle Lightening Treatment",
-          "price": 75,
-          "description": [
-            "Reduces appearance of freckles",
-            "Brightens overall complexion",
-            "Series recommended"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "makeup",
-      "name": "Makeup Services",
-      "description": "Professional makeup application for any occasion",
-      "services": [
-        {
-          "name": "Bridal Makeup",
-          "price": 150,
-          "description": [
-            "Full bridal glam look",
-            "Long-lasting formula",
-            "Includes trial session consultation"
-          ]
-        },
-        {
-          "name": "Special Occasion Makeup",
-          "price": 75,
-          "description": [
-            "Perfect for events and parties",
-            "Customized to your style",
-            "Photo-ready finish"
-          ]
-        },
-        {
-          "name": "Makeup Lesson",
-          "duration": "60 min",
-          "price": 100,
-          "description": [
-            "Learn professional techniques",
-            "Personalized to your features",
-            "Product recommendations included"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "extras",
-      "name": "Additional Luxuries",
-      "description": "Enhance any treatment with these add-ons",
-      "services": [
-        {
-          "name": "Eye Contour Treatment Add-On",
-          "duration": "15 min",
-          "price": 25,
-          "description": ["Reduces puffiness and dark circles"]
-        },
-        {
-          "name": "Lip Treatment Add-On",
-          "duration": "10 min",
-          "price": 20,
-          "description": ["Hydrates and plumps lips"]
-        },
-        {
-          "name": "Hand Treatment Add-On",
-          "duration": "15 min",
-          "price": 25,
-          "description": ["Anti-aging treatment for hands"]
-        },
-        {
-          "name": "Neck & Decollete Add-On",
-          "duration": "20 min",
-          "price": 35,
-          "description": ["Extends facial treatment benefits"]
         }
       ]
     }
