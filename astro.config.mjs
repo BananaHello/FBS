@@ -3,8 +3,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://BananaHello.github.io',
-  base: '/FBS',
+  site: 'https://foreverandbeauty.com',
+  base: '/',
   integrations: [sitemap()],
   build: {
     assets: 'assets'
