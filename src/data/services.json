@@ -251,11 +251,6 @@
           "price": 25
         },
         {
-          "name": "Combination",
-          "price": 35,
-          "priceNote": "2 of the above"
-        },
-        {
           "name": "Full Arms",
           "price": 55
         },
@@ -292,6 +287,11 @@
           "name": "Back",
           "price": 80,
           "priceNote": "starting at"
+        },
+        {
+          "name": "Combination",
+          "price": 35,
+          "priceNote": "2 of the above"
         }
       ]
     },
