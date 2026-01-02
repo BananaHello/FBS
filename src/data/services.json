@@ -112,7 +112,7 @@
         {
           "name": "Microdermabrasion",
           "duration": "30 min",
-          "price": 75,
+          "price": 150,
           "description": [
             "Crystal-free exfoliation",
             "Smooths skin texture",
@@ -141,7 +141,7 @@
         {
           "name": "O2 Intraceutical Oxygen Treatment",
           "duration": "60 min",
-          "price": 150,
+          "price": 200,
           "description": [
             "Celebrity-favorite treatment",
             "Instant glow and hydration",
@@ -152,7 +152,7 @@
         {
           "name": "Ultrasonic Whitening Treatment",
           "duration": "60 min",
-          "price": 120,
+          "price": 150,
           "description": [
             "Ultrasonic deep penetration",
             "Brightens and evens skin tone",
