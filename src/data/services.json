@@ -285,7 +285,7 @@
         },
         {
           "name": "Brazilian, return within 6 weeks",
-          "price": 70,
+          "price": 80,
           "priceNote": "starting at"
         },
         {
@@ -300,7 +300,8 @@
         },
         {
           "name": "Combination",
-          "price": 40
+          "price": 40,
+          "priceNote": "starting at"
         }
       ]
     },
@@ -345,7 +346,7 @@
         },
         {
           "name": "Eyelash Perming",
-          "price": 100
+          "price": 120
         },
         {
           "name": "Arching Eyebrow",
